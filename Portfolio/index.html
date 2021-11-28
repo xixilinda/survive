@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600;700;800;900&family=Poppins:ital,wght@0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#About"><span>ABOUT</span></a>
+        <a href="#Project"><span>PROJECT</span></a>
+        <a href="#Evolution"><span>EVOLUTION</span></a>
+        <a href="#Reflection"><span>REFLECTION</span></a>
+        <a href="#Portfolio"><span>PORTFOLIO</span></a>
+    </nav>
+    <header>
+        <div id="cover">
+            <a href="#About"><span>Explore</span></a>
+        </div>
+    </header>
+
+    <section id="About">
+        <span class="title">About</span>
+        <div class="content-about">
+            <img id="imgabout" src="img/about.png" alt="">
+            <p>Hi! My name is Yangxi Wang. I am interaction design student at the University of Queensland. 
+                My career ambitions are combining UX design, robotics, and product. I am always glad and open 
+                towards new things and new knowledge. And I hope to have opportunities to challenge myself in 
+                future projects!</p>
+            <p>You can contact me at: yangxi.wang@uq.net.au</p>
+        </div>
+    </section>
+
+    <section id="Project">
+        <span class="title">Project</span>
+        <div class="content-project">
+            <img id="imgproject" src="img/webcover.png" alt="">
+
+            <p>Survive is an educational website that allows users to learn how to deal with dangerous offences 
+                and emergencies by providing several series of text-based game. Users can know about different 
+                offence rates in different rigions and can choose the game in these regions to play game with the 
+                specific stories based on relatively high crime rates  in this city.</p>
+            <p>Besides, users can also view and search different kind of services on the such as police stations 
+                and hospital. Most of them are presented with address  and telephone numbers. This is to allow users 
+                to get familiar with the place they are living in and know what kind of services are available nearby.</p>
+            <video controls>
+                <source src="video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="project-link">
+            <a href="https://impala.uqcloud.net/survive/index.html"><span>Go to Site</span></a>
+        </div>
+    </section>
+    
+    <section id="Evolution">
+        <span class="title">Design Evolution</span>
+        <p>Over the course of the project, the design has processed and changed based on user feedback. There are several Iterative versions.</p>
+        <div id="evo-imgs">
+            <img src="img/version1.png" alt="">
+            <img src="img/version2.jpg" alt="">
+            <img src="img/version3.jpg" alt="">
+            <img src="img/version4.png" alt="">
+        </div>
+        <div class="evolution-part">
+            <h1>PartA Developing Concept</h1>
+            <div class="view-part">
+                <h3>Product Requirement</h3>
+                <p>1. Implement an web-application.</p>
+                <p>2. Use one or more datasets from <a href="https://data.gov.au/">State Library of Queensland (SLQ). </a>, and utilise them to develope the concept</p>
+                <h3>My Contribution</h3>
+                <p>1. Discussion with teammates on zoom and give some tips and ideas on ideation.</p>
+                <p>2. Finding appropriate datasets.</p>
+                <p>3. As a presenter in presentation.</p>
+                <h3>Reflection</h3>
+                <p>1. Sometime we think the Datasets are very useful. however, some datasets are small or lack of API. So, 
+                    choosing datasets is very important.</p>
+                <p>2. At the first time, our team fail to design websites with interaction to datasets. We just use it as background, 
+                    but interaction with datasets is more meaningful for the websites because we can find some problem or creative 
+                    solution from using datasets.</p>
+                <p>3 As for the team discussion, about interaction of our wbsite, we have discussed a lot about it, 
+                    but when we retalked about our website, our work and thoughts were different. The logics were different 
+                    base on same Idea. We think we should talk ideas more with teammates to make consensus.</p> 
+                <p>4 Finally, after the presentation, my team had a deep discussion about the idea and modified a concept successfully.</p>           
+            </div>
+            <button id="button1" onclick="Clickbutton(1)">See More</button>
+            <div class="hide-part1">
+                <h3>Datasets</h3>
+                <p><a href="https://data.gov.au/dataset/ds-qld-4efff013-6049-4a13-9b83-9514b00fcf5d/details?q=lga%20rates">LGA Reported Offences Rates</a></p>
+                <p><a href="https://www.data.qld.gov.au/dataset/21091016-bb06-4032-abf4-4608be0871ff">Queensland public hospitals</a></p>
+                <p><a href="https://www.data.qld.gov.au/dataset/679424b4-ccf8-46cd-8e0b-f16c49572dbb">Queensland Ambulance Service Locations and Co-ordinates</a></p>
+                <p><a href="https://datahub.moretonbay.qld.gov.au/datasets/public-hospitals/explore">Public Hospitals</a></p>
+                <p><a href="https://datahub.moretonbay.qld.gov.au/datasets/MBRC::qpspolicestations/explore">QPSPoliceStations</a></p>
+                <p><a href="https://datahub.moretonbay.qld.gov.au/datasets/MBRC::qfesfirestations/explore">QFESFireStations</a></p>
+                <h3>Ideation</h3>
+                <p>Producing an crime story game based on crime rates background for the teenagers was our initial idea.The target audience 
+                    of our website is 18-22 years old college freshmen who have left or are about to go to a new city to study. 
+                    For such students and their families, safety always comes first. However, the feedback from course coordinator, tutors and other 
+                    teams showed that we should not just make datasets as background. Besides, we should consider the goal of our 
+                    application whether teach teenagers to protect themselves from crimes or teach them about types of crime. we 
+                    realized the existing and potential problems of our ideas, so we made some changes according to that.</p>
+                <p>According to the suggestion that bring the data into the central part of the game rather than being a background, 
+                    we changed the main datasets to police stations, hospital and ambulance, and the offence data will be displayed 
+                    as an introduction and reminder after the game. In this case, the location of police stations, hospitals and ambulances 
+                    could be used in the game as a key interaction element. Wrong answer explanations in the game will be available as 
+                    one of the feedback mentioned. Besides, the style of our website was decided as hand-drawn and cartoon style thanks 
+                    to the advice about sensitivity, the game and the pictures will not be too violent and scary</p>
+                <p>What's more, We thought the situations of one tyle of crime may be different and complex. 
+                    Thus, we decided to use map to let users to know their situations in game about where was policestations to help users to make decisions.</p>
+                <h3>Research</h3>
+                <p>We were hand to find similar websites like us. A lot of websites just give some tips about protecting from crimes and are little boring. 
+                    We thought the story game will make learning protecting from crimes more efficient.
+                </p>
+                <h3>Feedback Solution</h3>
+                <img id="process1" src="img/process1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="evolution-part">
+            <h1>PartB Websites Prototype Development</h1>
+            <div class="view-part">
+                <h3>Product Requirement</h3>
+                <p>1. Producing paper prototypes</p>
+                <p>2. Updating Prototypes</p>
+                <p>3. Starting to implement websites</p>
+                <h3>My Contribution</h3>
+                <p>1. Designing the paper prototypes</p>
+                <p>2. Discussing with teammates about websites's implement</p>
+                <p>3. Designing the aesthetic prototypes</p>
+                <p>4. Starting drawing the illustration of crime stories</p>
+                <p>5.Joining websites implementation</p>
+                <h3>6. Reflection</h3>
+                <p>1. After prototype user test, a lot of users complained that our homepage was complex for then to understand. 
+                    And the colors of websites were not obvious. The choices on map were hard to notice and chooce. I think the user test and prototype are useful for us to modification</p>
+                <p>2. When starting to implement wensites, We find some proplems about API in some datasets. We should change to use other 
+                    similar datasets. I learned that when using the datasets to concept ideas, we should check the details of datasets.</p>
+                <p>3. Because of datasets limitations, we could not to find exact regions with high crime rates in one city. We made decision to 
+                    design stories based on top 5 crime type rates relatively compared to other cities in Brisbane. The locations to choose were 
+                    randomly and it also was good for users to not develope a awareness that some areas were bad. </p>
+                <p>4. Considering the workload, We discussed to choose five cities to design stories.</p>
+            </div>
+            <button id="button2" onclick="Clickbutton(2)">See More</button>
+            <div class="hide-part2">
+                <h3>Design Process</h3>
+                <img id="process2" src="img/process2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="evolution-part">
+            <h1>PartC Websites Implement and Trade Show</h1>
+            <div class="view-part">
+                <h3>Final Requirement</h3>
+                <p>1. Websites implement </p>
+                <p>2. Dealing with websites technologies </p>
+                <p>3. Preparing for Trade Show </p>
+                <h3>My Contribution</h3>
+                <p>1. Game stories braimstromings</p>
+                <p>2. Game illustrations drawing and design</p>
+                <p>3. Making poster for Tradeshow</p>
+                <p>4. helping to write report</p>
+                <h3>Trade Show Result</h3>
+                <p>Because of Covid 19, we took the course online and presented our websites on zoom in Trade Show. The Trade Show ended successfully.
+                    When students and teachers listened our presentation and used our websites, they had positive experience because our websites were
+                    worthwile and meaningful for teeangers to learn to face crimes. One teacher adviced that we could filter the information of hosipital, police stations 
+                    ambulance stations. We thought it could be a good advice. And when I introduced that the map on game helped users to know the game's situatuion 
+                    and the location chosen randomly to avoid people have bad awareness of one location, they acknowledged it and appreciated our intensions.  </p>
+                <h3>Reflection</h3>
+                <p>1. When implementing the websites, I was not good at typing codes. Fortunately, with help of my teammates, I learn a lot of codes.
+                     However, my teammates comtributed a lot in typing code. So I take responsibilities to design our websites. I thoughr team cooperation was very important </p>
+                <p>2. I thought it could be more fun and appealing to teenagers if the websites showed story illuatration with vivid animations.
+                    However, these skills and technologies should be futher learned in the future.
+                </p>
+                <p>3. Our websites implement and trade show were successfull at end. We got a lot of questions and acknowledges about our websites. 
+                    The Websites were well designed and constructed </p>
+            </div>
+            <button id="button3" onclick="Clickbutton(3)">See More</button>
+            <div class="hide-part3">
+                <h3>Websites implementation</h3>
+                <img id="process3" src="img/process3.jpg" alt="">
+                <h3>Technology</h3>
+                <p>The webpage is divided into two parts: importing the database api and storyline. We use PHP to import the stories, choices 
+                    and endings stored in MySQL. Datasets and map informations are loaded by Javascript through API provided by government 
+                    official site.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Reflection">
+        <span class="title">Reflection</span>
+        <div class="view-part">
+            <h3>Course Reflection</h3>
+            <p>As for the course, I learned a lot from designing skills and technology skills. For example, I learned to transfer the concept to 
+                the product. During the whole process, I should learn to cooperate with teammates and make consensus. We should draw sketch to 
+                express idea directly and organize the logics of project. In our websites, I learn to design websites’ layout, structure, 
+                and aesthetics, which improved my design skills. Besides, when we tested our prototypes with users, they could point out problems 
+                that we have ignored. As a user when I took part in other teams’ user test. I found many problems and reminded me that I should 
+                consider the user’s experience in websites. I was helped by my teammates and tutors a lot for technological problems, my coding 
+                ability has improved a lot.</p>
+
+            <p>As for teamwork and project, I learned to improve my communication skills in zoom. The main challenge is that my teammates and 
+                I have never chatted face to face, and we should try hard to organize the schedule to discuss. What’s more, when I thought we 
+                had made consensus, we found our thoughts to the project were different again. To overcome these challenges, We communicated more 
+                in our spare time to make consensus. </p>
+            
+        </div>
+
+    </section>
+    <section id="Portfolio">
+        <span class="title">Portfolio</span>
+        <div class="view-part">
+            <p>This portfolio is designed to demonstrate the evolution of Survive and my contribution to the project.
+                 The project is  designed by our teams and  implemented using HTML,CSS, JavaScript and MySQL. I believe this 
+                 portfolio successfully demonstrates my contribution and design process throughout the entire course. 
+                 I want to thank to teachers, tutors and teammates for their helps. </p>
+
+        </div>
+
+    </section>
+
+    
+    
+    
+</body>
+</html>
