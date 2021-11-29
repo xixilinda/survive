@@ -37,7 +37,10 @@ header{
     width: 100%;
     padding-top: 60vh;
 }
-
+iframe{
+    width: 50vw;
+    height: 60vh;
+}
 video{
     width: 50%;
 }
